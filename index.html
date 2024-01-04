@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>
+                <span>Kurs uchun to'lov</span>
+            </h1>
+            <div class="cancel">
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+            </div>
+            <form method="post">
+                <div class="content">
+                    <div class="purchase">
+                        <h3>Xarid</h3>
+                        <div class="fan-name">Matematika</div>
+                        <div class="fan-name">Buyurtma id: 1</div>
+                        <div class="fan-name">100000.0 <span>UZS</span></div>
+                        <div class="fan-name">Holati: to'lanmagan</div>
+                        <div class="inputs">
+                            <label for="payme" id="payme-label" onclick="payme()">Payme</label>
+                            <input type="radio" name="radio" id="payme">
+                            <label for="click" id="click-label" onclick="clickk()">Click</label>
+                            <input type="radio" name="radio" id="click">
+                        </div>
+                    </div>
+                    <div class="client">
+                        <h3>Xaridor</h3>
+                        <div class="fan-name">Haqqulbek</div>
+                        <div class="fan-name">Muhiddinov</div>
+                        <div class="fan-name">@username</div>
+                        <div class="fan-name">+998-55-444-33-22</div>
+                        <div class="fan-name">avensondjef@gmail.com</div>
+                    </div>
+                </div>
+                <button type="submit">Xarid qilish</button>
+            </form>
+        </div>
+    </section>
+    <style>
+        #payme-label {
+            background-color: #04294B;
+        }
+    </style>
+    <script>
+        function payme() {
+            document.getElementById('payme-label').style.backgroundColor = '#04294D';
+            document.getElementById('click-label').style.backgroundColor = 'transparent';
+        }
+
+        function clickk() {
+            document.getElementById('payme-label').style.backgroundColor = 'transparent';
+            document.getElementById('click-label').style.backgroundColor = '#04294D';
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
